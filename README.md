@@ -3,5 +3,5 @@
 * make
 * ko apply -f config/
 * wait until the ksvcs are Ready, get the sender URL
-* curl http://<sender-url>
+* curl http://\<sender-url\>
 
