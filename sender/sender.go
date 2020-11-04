@@ -76,7 +76,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	http.HandleFunc("/send", func(w http.ResponseWriter, r *http.Request) {
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		err := send()
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
